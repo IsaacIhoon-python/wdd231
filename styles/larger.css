@@ -1,0 +1,41 @@
+@media only screen and (min-width: 38rem) {
+    header, nav, main, footer {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: 40px auto;
+    }
+
+   .hamburger {
+        display: none;
+    }
+
+   .navigation {
+        display: block;
+        border-bottom: 1px solid #ddd;
+    }
+
+   .navigation ul {
+        display: flex;
+    }
+
+   .navigation a {
+        border: none;
+        border-bottom: none;
+    }
+
+   .navigation li.current a {
+        border-left: none;
+        border-bottom: 4px solid #E07A5F;
+    }
+
+   .hero-grid {
+        grid-template-columns: 2fr 1fr;
+    }
+
+   .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

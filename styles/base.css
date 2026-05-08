@@ -1,0 +1,241 @@
+/* COLOR SCHEME
+terra cotta #E07A5F
+deep slate blue #3D405B
+*/
+
+/******************* SITE WIDE ****************/
+* {
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 320px;
+    overflow-x: hidden;
+}
+
+/*************** HEADER ****************/
+header {
+    display: grid;
+    grid-template-columns: 40px auto 44px;
+    padding: 0.5rem 1rem;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    column-gap: 0.5rem;
+    background-color: #fff;
+}
+
+header img {
+    display: block;
+    width: 44px;
+    height: 44px auto;
+}
+
+header span {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #3D405B;
+}
+
+/**************** HAMBURGER ****************/
+.hamburger {
+    background: none;
+    border: none;
+    color: #3D405B;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.hamburger::before {
+    content: "☰";
+}
+
+.hamburger.show::before {
+    content: "×";
+}
+
+/**************** NAVIGATION ****************/
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.8rem 1rem;
+    color: #3D405B;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+    font-weight: 600;
+}
+
+.navigation li.current a {
+    background-color: #eee;
+    border-left: 4px solid #E07A5F;
+}
+
+.navigation a:hover {
+    background-color: #E07A5F;
+    color: #fff;
+}
+
+/**************** MAIN ****************/
+main {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #3D405B;
+    margin: 1rem 0;
+}
+
+h2 {
+    background-color: #3D405B;
+    color: #fff;
+    padding: 0.5rem;
+    text-align: center;
+    margin: 0;
+    border-radius: 5px 5px 0 0;
+}
+
+section {
+    margin: 1rem 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+section p {
+    padding: 1rem;
+    line-height: 1.6;
+}
+
+.about p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+.about p:last-child {
+    margin-bottom: 0;
+}
+
+.hero-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 1rem;
+}
+
+/**************** COURSE SECTION ****************/
+.course-buttons {
+    display: flex;
+    gap: 0.5rem;
+    padding: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.course-buttons button {
+    background-color: #3D405B;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.course-buttons button:hover {
+    background-color: #E07A5F;
+}
+
+.courses p {
+    text-align: center;
+    font-weight: 600;
+    padding: 0 1rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.card {
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 600;
+    border: 1px solid #ccc;
+}
+
+.card.completed {
+    background-color: #d4edda;
+    border-color: #3D405B;
+}
+
+.card.completed::before {
+    content: "✓ ";
+    font-weight: 700;
+}
+
+.card.incomplete {
+    background-color: #f8d7da;
+}
+
+/**************** FOOTER ****************/
+footer {
+    background-color: #eee;
+    padding: 1rem;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: 1px solid #ccc;
+    border-radius: 22px;
+    background-color: #fff;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    background-color: #ddd;
+}
+
+footer p {
+    margin: 0.25rem 0;
+    color: #3D405B;
+    font-size: 0.9rem;
+}
