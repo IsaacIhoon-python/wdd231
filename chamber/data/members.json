@@ -1,0 +1,86 @@
+{
+  "members": [
+    {
+      "name": "Goch Group Nigeria Limited",
+      "address": "Suite B7, Sticks & Stones plaza, Ademola Adetokunbo crescent, Wuse 2, Abuja, Nigeria",
+      "phone": "+234-0805 855 5297",
+      "website": "https://www.gochgroupng.com",
+      "image": "images/gochgroup.webp",
+      "membership": "silver",
+      "description": "specializes in selling, installing, and maintaining coldrooms, distillers, and a wide range of other products and services.."
+    },
+    {
+      "name": "Levene Energy",
+      "address": "No 9 Thaba Tseka Street, Abuja FCT, Nigeria",
+      "phone": "+234-906 289 8514",
+      "website": "https://leveneenergy.com",
+      "image": "images/levene.webp",
+      "membership": "gold",
+      "description": "Energy value chain solutions provider."
+    },
+    {
+      "name": "BetaBrand",
+      "address": "Gidan Isa plaza, area 10, Garki, Abuja, Nigeria",
+      "phone": "+234-8033542269",
+      "website": "https://betabrand.ng/#",
+      "image": "images/betabrand.webp",
+      "membership": "silver",
+      "logoClass": "light-logo",
+      "description": "website development, product design, branding, content creation and business strategy."
+    },
+    {
+      "name": "Surjen Healthcare",
+      "address": "Suit-01, Commercial complex, Amina Court, Gudu Abuja, Nigeria",
+      "phone": "+234-8081111121",
+      "website": "https://surjen.com",
+      "image": "images/surjen.webp",
+      "membership": "gold",
+      "description": "Healthcare and medical services."
+    },
+    {
+      "name": "Gab Taxi",
+      "address": "31 Pope John Paul Street, Maitama, Abuja, Nigeria",
+      "phone": "+234-706787100",
+      "website": "https://gabtaxi.com",
+      "image": "images/gabtaxi.webp",
+      "membership": "member",
+      "description": "E-hailing transportation service."
+    },
+    {
+      "name": "IT Sky Solutions Limited",
+      "address": "13b Fredrick Chiluba,Asokoro, Abuja, Nigeria",
+      "phone": "+234-7067871000",
+      "website": "https://itskysolutions.com",
+      "image": "images/itsky.webp",
+      "membership": "silver",
+      "description": "Contact center solutions provider."
+    },
+    {
+      "name": "LianLush Enterprise",
+      "address": "No 16 Gwani Street, Zone 4, Wuse, FCT, Abuja",
+      "phone": "+234-8069436267",
+      "website": "https://lianlushenterprise.org",
+      "image": "images/lianlush.webp",
+      "membership": "member",
+      "description": "Clothing and fashion store."
+    },
+    {
+      "name": "Danovate Solutions",
+      "address": "5th Floor, Merit Plaza, Aguiyi Ironsi Street, Maitama, Abuja, Nigeria",
+      "phone": "+234-8039575760",
+      "website": "https://danovatesolutions.org",
+      "image": "images/danovate.webp",
+      "membership": "gold",
+      "description": "Technology & Digital Solutions Specialist."
+    },
+    {
+      "name": "Zeetin Engineering",
+      "address": "Plot 1077, Off Atiku Abubakar Way, Idu, Abuja, Nigeria",
+      "phone": "+234-7014252222",
+      "website": "https://www.zeetinengineering.com/",
+      "image": "images/zeetin.webp",
+      "membership": "member",
+      "description": "Technology and accurate Engineering company, deals on heavy industrial equipment."
+    }
+  ]
+}

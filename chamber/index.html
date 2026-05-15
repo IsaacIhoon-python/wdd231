@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abuja Chamber of Commerce - Home</title>
+    <meta name="description" content="Abuja Chamber of Commerce - Promoting business growth and community in FCT, Nigeria">
+    <meta name="author" content="Isaac Ihoon">
+
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Abuja Chamber of Commerce">
+    <meta property="og:description" content="Connecting businesses and fostering economic growth in Abuja, Nigeria">
+    <meta property="og:image" content="https://isaacihoon-python.github.io/wdd231/chamber/images/hero-abuja.webp">
+    <meta property="og:url" content="https://isaacihoon-python.github.io/wdd231/chamber/">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/chamber_logo.png" alt="Abuja Chamber Logo" width="50" height="50">
+        <span>Abuja Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger" aria-label="Toggle Menu"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="hero">
+            <img src="images/hero-abuja.webp" alt="Abuja City Gate" width="1200" height="600">
+            <a href="join.html" class="cta">Keynote Tickets</a>
+        </div>
+
+        <h1>Home</h1>
+        
+        <div class="home-grid">
+            <section class="events">
+                <h2>Events</h2>
+                <div class="event-card">
+                    <h3>Abuja Business Mixer</h3>
+                    <p>Thursday, May 22, 2026 | 6:00 PM</p>
+                    <p>Transcorp Hilton - Networking for SMEs</p>
+                </div>
+            </section>
+
+            <section class="events">...</section>
+            <section class="weather">
+                <h2>Current Weather</h2>
+                <div id="current-weather"></div>
+            </section>
+
+            <section class="forecast">
+                <h2>Weather Forecast</h2>
+                <div id="weather-forecast"></div>
+            </section>
+
+            <section class="spotlights">
+                <h2>Member Spotlights</h2>
+                <div id="spotlight-cards"></div>
+            </section>
+        </div>
+
+        
+    </main>
+
+    <footer>
+        <div class="contact">
+            <p><strong>Abuja Chamber of Commerce</strong></p>
+            <p>Central Business District</p>
+            <p>Abuja, FCT, Nigeria</p>
+            <p>info@abujachamber.org</p>
+            <p>(234) 800-ABUJA-01</p>
+        </div>
+        <div class="social">
+            <a href="https://youtube.com/@ihoonisaac?si=UKtKgXGxX9wlKG9N"><img src="images/youtube.svg" alt="YouTube" width="22" height="22"></a>
+            <a href="https://x.com/TheGhostforex"><img src="images/twitter-x.svg" alt="Twitter X" width="22" height="22"></a>
+            <a href="https://www.linkedin.com/in/ihoon-a-isaac"><img src="images/linkedin.svg" alt="LinkedIn" width="22" height="22"></a>
+            <a href="https://www.github.com/isaacihoon-python"><img src="images/github.svg" alt="github" width="22" height="22"></a>
+        </div>
+        <div class="project-info">
+            <p>WDD231 Class Project</p>
+            <p>Isaac Ihoon</p>
+            <p>&copy; <span id="currentyear"></span> Abuja Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

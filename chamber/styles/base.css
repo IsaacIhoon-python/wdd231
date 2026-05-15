@@ -1,0 +1,280 @@
+:root {
+  --primary-color: #0A4174;  /* Deep Blue - for headers, nav */
+  --secondary-color: #C8102E; /* Nigerian Red - for buttons, highlights */
+  --accent1-color: #F8F9FA;  /* Off-white - page background */
+  --accent2-color: #212529;  /* Charcoal - main text color */
+  --font: 'Montserrat', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font);
+  color: var(--accent2-color);
+  background-color: var(--accent1-color);
+}
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+header span {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.hamburger {
+  margin-left: auto;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.hamburger::before { content: "☰"; }
+.hamburger.show::before { content: "✕"; }
+
+.navigation {
+  background-color: var(--accent2-color);
+  display: none;
+}
+
+.navigation.show { display: block; }
+
+.navigation ul {
+  list-style: none;
+}
+
+.navigation a {
+  display: block;
+  color: white;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  background-color: var(--secondary-color);
+}
+
+.navigation .current a {
+  background-color: var(--secondary-color);
+}
+
+.hero {
+  position: relative;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.cta {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: var(--secondary-color);
+  color: white;
+  padding: .75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.cta:hover {
+  background-color: var(--primary-color);
+}
+
+h1 {
+  margin: 1rem;
+  color: var(--primary-color);
+}
+
+.home-grid {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+section {
+  background-color: white;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+section h2 {
+  background-color: var(--primary-color);
+  color: white;
+  padding: .5rem;
+  margin: -1rem -1rem 1rem -1rem;
+}
+
+#spotlight-cards {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.spotlight {
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 1rem;
+}
+
+.spotlight img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: .5rem;
+  padding: 0.5rem;
+  background-color: #f8f8f8;
+  border-radius: 4px;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  display: grid;
+  gap: 1rem;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social img {
+  filter: brightness(0) invert(1);
+  transition: transform 0.2s;
+  width: 44px;
+  height: 44px;
+}
+
+.social a:hover img {
+  transform: scale(1.1);
+}
+
+.light-logo {
+    background-color: #333; /* Dark background just for light logos */
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+#directory img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  background-color: #f8f8f8;
+  padding: 0.5rem;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto 0.5rem;
+}
+
+#directory img.light-logo {
+  background-color: #333;
+}
+
+#directory.list img {
+  display: none;
+}
+
+.membership-level {
+    font-weight: 600;
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    margin: 0.25rem 0;
+}
+#directory.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+#directory.grid section {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+#directory.grid h2 {
+  background-color: var(--primary-color);
+  color: white;
+  padding: .5rem;
+  margin: -1rem -1rem 1rem -1rem;
+  font-size: 1.2rem;
+}
+#directory.list {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  gap: 0;
+}
+#directory.list section {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr 1fr 1fr; 
+  align-items: center;
+  padding: 0.75rem;
+  text-align: left;
+  gap: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+#directory.list section:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+#directory.list section h2 {
+  background: none;
+  color: var(--accent2-color);
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+}
+#directory.list img {
+  display: none; /* Hide images in list view - rubric requirement */
+}
+
+#directory.list p, #directory.list a {
+  margin: 0;
+  word-break: break-word; /* Prevents text overlap */
+}
+
+.membership-level {
+  font-weight: 600;
+  color: var(--secondary-color);
+  font-size: 0.9rem;
+}
+
+/* Tablet: 2 columns */
+@media (min-width: 601px) {
+  #directory.grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop: 3 columns - your default */
+@media (min-width: 1025px) {
+  #directory.grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
