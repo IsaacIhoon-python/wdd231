@@ -193,10 +193,6 @@ footer {
   background-color: #333;
 }
 
-#directory.list img {
-  display: none;
-}
-
 .membership-level {
     font-weight: 600;
     color: var(--secondary-color);
@@ -256,12 +252,6 @@ footer {
 #directory.list p, #directory.list a {
   margin: 0;
   word-break: break-word; /* Prevents text overlap */
-}
-
-.membership-level {
-  font-weight: 600;
-  color: var(--secondary-color);
-  font-size: 0.9rem;
 }
 
 /* Tablet: 2 columns */
