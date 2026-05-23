@@ -17,11 +17,12 @@
     <link rel="icon" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"></noscript>
     
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 1024px)">
     
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
@@ -30,7 +31,7 @@
 </head>
 <body>
     <header>
-        <img src="images/chamber_logo.webp" alt="Abuja Chamber Logo" width="50" height="50">
+        <img src="images/chamber_logo.webp" alt="Abuja Chamber Logo" width="125" height="50">
         <span>Abuja Chamber of Commerce</span>
         <button id="ham-btn" class="hamburger" aria-label="Toggle Menu"></button>
     </header>
@@ -45,9 +46,14 @@
     </nav>
 
     <main>
+
         <div class="hero">
-            <img src="images/hero-abuja.webp" alt="Abuja City Gate" width="1200" height="600">
-            <a href="join.html" class="cta">Keynote Tickets</a>
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 600px)">
+                <source srcset="images/hero-medium.webp" media="(max-width: 1024px)">
+                <img src="images/hero-large.webp" alt="Abuja Chamber of Commerce" width="1920" height="400" loading="eager" fetchpriority="high">
+            </picture>
+            <a href="join.html" class="cta">join the Chamber</a>
         </div>
 
         <h1>Home</h1>
@@ -62,7 +68,6 @@
                 </div>
             </section>
 
-            <section class="events">...</section>
             <section class="weather">
                 <h2>Current Weather</h2>
                 <div id="current-weather"></div>
