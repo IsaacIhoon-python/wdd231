@@ -126,12 +126,11 @@ section h2 {
 
 #spotlight-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax
-  (250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
 }
 
-.weather, .forcast, .sportlights, .events {
+.weather, .forecast, .spotlights, .events {
   background-color: white;
   padding: 1rem;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -154,7 +153,6 @@ section h2 {
 .spotlight img {
   width: 100px;
   height: 100px;
-  object-fit: contain;
   margin-bottom: .5rem;
   padding: .5rem;
   border: 1px solid #ddd;
