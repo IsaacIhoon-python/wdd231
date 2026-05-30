@@ -1,4 +1,4 @@
-// chamber/scripts/spotlight.js
+
 const spotlightURL = 'data/members.json';
 const cards = document.querySelector('#spotlight-cards');
 
@@ -8,9 +8,9 @@ async function getSpotlightMembers() {
     if (response.ok) {
       const data = await response.json();
       const membersArray = data.members || data;
-      // only gold or silver members
+      // only gold , bronze or silver members
       const qualified = membersArray.filter(member => 
-        member.membership === 'gold' || member.membership === 'silver'
+        member.membership === 'gold' || member.membership === 'bronze' || member.membership === 'silver'
       );
     
       // Shuffle array and pick 2-3

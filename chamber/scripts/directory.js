@@ -16,7 +16,7 @@ async function getMembers() {
 getMembers();
 
 const displayMembers = (members) => {
-    directory.innerHTML = ''; // Clear before rebuilding
+    directory.innerHTML = '';
     
     members.forEach((member) => {
         let card = document.createElement('section');
@@ -24,7 +24,7 @@ const displayMembers = (members) => {
         let name = document.createElement('h2');
         let address = document.createElement('p');
         let phone = document.createElement('p');
-        let membership = document.createElement('p'); // ← You were missing this
+        let membership = document.createElement('p'); 
         let website = document.createElement('a');
 
         logo.setAttribute('src', member.image);
@@ -37,9 +37,8 @@ const displayMembers = (members) => {
         address.textContent = member.address;
         phone.textContent = member.phone;
         
-        // FIX: Use member.membership and capitalize first letter
         membership.textContent = `Membership: ${member.membership.charAt(0).toUpperCase() + member.membership.slice(1)}`;
-        membership.style.color = '#8B0000'; // Red like your screenshot
+        membership.style.color = '#8B0000'; 
         membership.style.fontWeight = '600';
         
         website.setAttribute('href', member.website);
@@ -50,7 +49,7 @@ const displayMembers = (members) => {
         card.appendChild(name);
         card.appendChild(address);
         card.appendChild(phone);
-        card.appendChild(membership); // ← Append it
+        card.appendChild(membership);
         card.appendChild(website);
 
         directory.appendChild(card);

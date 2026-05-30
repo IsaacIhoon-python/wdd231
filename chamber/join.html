@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join - Abuja Chamber of Commerce</title>
+    <meta name="description" content="Join the Abuja Chamber of Commerce. Apply for membership today.">
+    <meta name="author" content="Isaac">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"></noscript>
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Join Abuja Chamber of Commerce">
+    <meta property="og:description" content="Apply for membership with the Abuja Chamber of Commerce today">
+    <meta property="og:image" content="https://isaacihoon-python.github.io/wdd231/chamber/images/hero-large.webp">
+    <meta property="og:url" content="https://isaacihoon-python.github.io/wdd231/chamber/join.html">
+    <meta property="og:type" content="website">
+</head>
+<body>
+    <header>
+        <img src="images/chamber_logo.webp" alt="Abuja Chamber of Commerce Logo" width="250" height="100">
+        <span>Abuja Chamber of Commerce</span>
+        <button id="menu-button" aria-label="Toggle Menu"></button>
+    </header>
+    
+    <nav id="nav-menu" aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html" class="active">Join</a>
+        <a href="discover.html">Discover</a>
+    </nav>
+    
+    <main class="join-main">
+        <h1>Join the Chamber</h1>
+        
+        <div class="form-container">
+            <form method="get" action="thankyou.html" class="join-form">
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    
+                    <label>First Name*
+                        <input type="text" name="fname" title="Enter your first name" required autocomplete="given-name">
+                    </label>
+                    
+                    <label>Last Name*
+                        <input type="text" name="lname" title="Enter your last name" required autocomplete="family-name">
+                    </label>
+                    
+                    <label>Organizational Title
+                        <input type="text" name="orgtitle" title="Enter your title in the organization" 
+                               autocomplete="organization-title" 
+                               pattern="[A-Za-z\s\-]{7,}">
+                        <small>Minimum 7 characters. Alpha, hyphens, spaces only.</small>
+                    </label>
+                    
+                    <label>Email*
+                        <input type="email" name="email" title="Enter your email address" required 
+                               autocomplete="email" placeholder="example@domain.com">
+                    </label>
+                    
+                    <label>Mobile Phone*
+                        <input type="tel" name="phone" title="Enter your mobile number" required autocomplete="tel">
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Business Information</legend>
+                    
+                    <label>Business/Organization Name*
+                        <input type="text" name="organization" title="Enter your business name" required 
+                               autocomplete="organization">
+                    </label>
+                    
+                    <label>Membership Level*
+                        <select name="membership" title="Select membership level" required>
+                            <option value="">Please Select</option>
+                            <option value="np"> Member - just a member (No Fee)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+                    
+                    <label>Business Description
+                        <textarea name="description" title="Describe your business"></textarea>
+                    </label>
+                    
+                    <input type="hidden" name="timestamp" id="timestamp">
+                </fieldset>
+
+                <input type="submit" value="Submit Application" class="submit-btn">
+            </form>
+
+            <section class="membership-cards">
+                <h2>Membership Levels</h2>
+                
+                <div class="card member-card">
+                    <h3> Member</h3>
+                    <p>Just a Member</p>
+                    <a href="#member-modal" class="info-link">Learn More</a>
+                </div>
+                
+                <div class="card bronze-card">
+                    <h3>Bronze Membership</h3>
+                    <p>Entry Level Benefits</p>
+                    <a href="#bronze-modal" class="info-link">Learn More</a>
+                </div>
+                
+                <div class="card silver-card">
+                    <h3>Silver Membership</h3>
+                    <p>Enhanced Benefits</p>
+                    <a href="#silver-modal" class="info-link">Learn More</a>
+                </div>
+                
+                <div class="card gold-card">
+                    <h3>Gold Membership</h3>
+                    <p>Premium Benefits</p>
+                    <a href="#gold-modal" class="info-link">Learn More</a>
+                </div>
+            </section>
+        </div>
+
+        <!-- Modals -->
+        <dialog id="member-modal">
+            <div class="modal-content">
+                <h3>Members Benefits</h3>
+                <ul>
+                    <li>No membership fee</li>
+                    <li>Access to networking events</li>
+                    <li>Monthly newsletter</li>
+                    <li>Community support resources</li>
+                </ul>
+                <button class="close-modal">Close</button>
+            </div>
+        </dialog>
+
+        <dialog id="bronze-modal">
+            <div class="modal-content">
+                <h3>Bronze Membership Benefits</h3>
+                <ul>
+                    <li>All member benefits</li>
+                    <li>Business directory listing</li>
+                    <li>10% event discount</li>
+                    <li>Quarterly training webinars</li>
+                </ul>
+                <button class="close-modal">Close</button>
+            </div>
+        </dialog>
+
+        <dialog id="silver-modal">
+            <div class="modal-content">
+                <h3>Silver Membership Benefits</h3>
+                <ul>
+                    <li>All Bronze benefits</li>
+                    <li>Spotlight position on homepage</li>
+                    <li>25% event discount</li>
+                    <li>Free monthly training</li>
+                    <li>Social media promotion</li>
+                </ul>
+                <button class="close-modal">Close</button>
+            </div>
+        </dialog>
+
+        <dialog id="gold-modal">
+            <div class="modal-content">
+                <h3>Gold Membership Benefits</h3>
+                <ul>
+                    <li>All Silver benefits</li>
+                    <li>Premium homepage placement</li>
+                    <li>50% event discount</li>
+                    <li>Dedicated business advisor</li>
+                    <li>Free booth at annual expo</li>
+                    <li>Exclusive CEO roundtable access</li>
+                </ul>
+                <button class="close-modal">Close</button>
+            </div>
+        </dialog>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact">
+                <p>Abuja Chamber of Commerce</p>
+                <p>Central Business District</p>
+                <p>Abuja, FCT, Nigeria</p>
+                <p>info@abujachamber.org</p>
+                <p>(234) 9019237632</p>
+            </div>
+            <div class="social">
+                <a href="https://youtube.com/@ihoonisaac?si=UKtKgXGxX9wlKG9N"><img src="images/youtube.svg" alt="YouTube" width="22" height="22"></a>
+                <a href="https://x.com/TheGhostforex"><img src="images/twitter-x.svg" alt="Twitter X" width="22" height="22"></a>
+                <a href="https://www.linkedin.com/in/ihoon-a-isaac"><img src="images/linkedin.svg" alt="LinkedIn" width="22" height="22"></a>
+                <a href="https://www.github.com/isaacihoon-python"><img src="images/github.svg" alt="github" width="22" height="22"></a>
+            </div>
+            <div class="project-info">
+                <p>WDD231 Class Project</p>
+                <p>Isaac Ihoon</p>
+                <p>&copy; <span id="currentyear"></span> Abuja Chamber of Commerce</p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/join.js"></script>
+</body>
+</html>

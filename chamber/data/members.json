@@ -34,7 +34,7 @@
       "phone": "+234-8081111121",
       "website": "https://surjen.com",
       "image": "images/surjen.webp",
-      "membership": "gold",
+      "membership": "bronze",
       "description": "Healthcare and medical services."
     },
     {
@@ -79,7 +79,7 @@
       "phone": "+234-7014252222",
       "website": "https://www.zeetinengineering.com/",
       "image": "images/zeetin.webp",
-      "membership": "member",
+      "membership": "bronze",
       "description": "Technology and accurate Engineering company, deals on heavy industrial equipment."
     }
   ]
