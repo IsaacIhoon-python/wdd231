@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abuja Meal Finder Site Plan</title>
+  <meta name="description" content="Site plan for Abuja Meal Finder WDD 231 final project">
+  <meta name="author" content="Isaac Ihoon">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --primary-color: #1a472a; /* Dark green - headers, footer, buttons */
+      --secondary-color: #f9a825; /* Gold - accents, CTA, links */
+      --background-color: #fdfdfd; /* Off-white - page background */
+      --text-color: #333333; /* Dark gray - body text */
+    }
+    
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      line-height: 1.6;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    
+    h1, h2, h3 {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--primary-color);
+    }
+    
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    header h1 { color: white; }
+    
+    section {
+      background: white;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-left: 5px solid var(--secondary-color);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    .color-schema {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .color-box {
+      width: 150px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+    }
+    .primary { background-color: var(--primary-color); }
+    .secondary { background-color: var(--secondary-color); color: var(--text-color); }
+    
+    .wireframe img {
+      max-width: 100%;
+      border: 1px solid #ccc;
+      margin: 1rem 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Abuja Meal Finder – Site Plan</h1>
+    <p>WDD 231 Individual Website Project</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Site Name</h2>
+      <h3>Abuja Meal Finder</h3>
+      <p>This name was selected because it clearly describes the site's function: helping users find meals and restaurants specifically within Abuja, Nigeria. It's direct, location-based, and easy to remember for branding. The name targets both residents and tourists searching for food options in the capital city.</p>
+      <p><strong>Optional domain:</strong> abujamealfinder.com</p>
+    </section>
+
+    <section>
+      <h2>Site Purpose</h2>
+      <p>The Abuja Meal Finder website serves as a comprehensive directory of restaurants, bukkas, suya spots, and cafes in Abuja. The site provides users with a searchable, filterable list of 20+ food establishments including their category, price range, location, specialty dish, and description. Key services include: browsing all restaurants, filtering by category like Local or Fast Food, viewing detailed information in a modal, and submitting suggestions for new restaurants via a form. The purpose is to simplify meal discovery and promote local food culture in Abuja.</p>
+    </section>
+
+    <section>
+      <h2>Scenarios</h2>
+      <p>These questions represent our target audience: Abuja residents, visitors, and food enthusiasts.</p>
+      <ul>
+        <li><strong>Scenario 1:</strong> "I'm new to Wuse 2 and craving amala. Which local restaurants near me serve authentic amala and ewedu?"</li>
+        <li><strong>Scenario 2:</strong> "Where can I find affordable Fast Food options under ₦₦ for a quick lunch in Garki?"</li>
+        <li><strong>Scenario 3:</strong> "I want to try suya tonight. Which grill spots are highly recommended and what are their specialties?"</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Color Schema</h2>
+      <p>The color palette reflects Nigerian food culture: earthy green for freshness and gold for the richness of local cuisine.</p>
+      <div class="color-schema">
+        <div class="color-box primary">Primary<br>#1a472a</div>
+        <div class="color-box secondary">Secondary<br>#f9a825</div>
+      </div>
+      <ul>
+        <li><strong>Primary - Dark Green #1a472a:</strong> Used for headers, footer, navigation background, buttons, and headings. Represents freshness and Nigerian greenery.</li>
+        <li><strong>Secondary - Gold #f9a825:</strong> Used for accents, call-to-action buttons, links, and highlights. Represents jollof rice and rich flavors.</li>
+        <li><strong>Background - Off-White #fdfdfd:</strong> Used for page background to ensure readability.</li>
+        <li><strong>Text - Dark Gray #333333:</strong> Used for body text to meet contrast standards.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Typography</h2>
+      <p>Two fonts were selected from Google Fonts for readability and modern feel.</p>
+      <ul>
+        <li><strong>Montserrat (Sans-serif):</strong> Used for all headings h1-h3. Bold weight 700. Provides strong, modern branding for the site name and section titles.</li>
+        <li><strong>Open Sans (Sans-serif):</strong> Used for body text, paragraphs, navigation, and forms. Chosen for excellent readability on all screen sizes.</li>
+      </ul>
+    </section>
+
+    <section class="wireframe">
+      <h2>Wireframes</h2>
+      <h3>Mobile View – Home Page</h3>
+      
+      <img src="images/wireframe-mobile.webp" alt="Mobile wireframe sketch for home page">
+      <p><strong>Layout:</strong> Logo + hamburger at top, hero text + CTA button, weather section, 2x1 spotlight cards stacked, footer.</p>
+      
+      <h3>Desktop View – Home Page</h3>
+      
+      <img src="images/wireframe-desktop.webp" alt="Desktop wireframe sketch for home page">
+      <p><strong>Layout:</strong> Logo + horizontal nav at top, wide hero banner, weather + 3x1 spotlight grid side by side, footer.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Isaac Ihoon | WDD 231 Site Plan</p>
+  </footer>
+</body>
+</html>
