@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover - Abuja Chamber of Commerce</title>
+    <meta name="description" content="Discover interesting places and attractions in Abuja, Nigeria">
+    <meta name="author" content="Isaac Ihoon">
+    
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"></noscript>
+    
+    <meta property="og:title" content="Discover Abuja - Chamber of Commerce">
+    <meta property="og:description" content="Explore 8 must-see attractions in Abuja, Nigeria">
+    <meta property="og:image" content="https://isaacihoon-python.github.io/wdd231/chamber/images/hero-large.webp">
+    <meta property="og:url" content="https://isaacihoon-python.github.io/wdd231/chamber/discover.html">
+    <meta property="og:type" content="website">
+</head>
+<body>
+    <header>
+        <img src="images/chamber_logo.webp" alt="Abuja Chamber of Commerce Logo" width="250" 
+        height="100" 
+        loading="eager">
+        <span>Abuja Chamber of Commerce</span>
+        <button id="ham-btn" aria-label="Toggle Menu"></button>
+    </header>
+
+    <nav id="nav-menu" class="navigation">
+        <a href="index.html">Home</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html">Join</a>
+        <a href="discover.html" class="active">Discover</a>
+    </nav>
+
+    <main class="discover-main">
+        <h1>Discover Abuja</h1>
+        
+        <aside class="visit-message" id="visit-message">
+            Welcome! Let us know if you have any questions.
+        </aside>
+        
+        <div class="discover-grid" id="discover-grid"></div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact">
+                <p><strong>Abuja Chamber of Commerce</strong></p>
+                <p>Central Business District</p>
+                <p>Abuja, FCT, Nigeria</p>
+                <p>info@abujachamber.org</p>
+                <p>(234) 090192337632</p>
+            </div>
+            <div class="social">
+                    <a href="https://youtube.com/@ihoonisaac?si=UKtKgXGxX9wlKG9N" aria-label="Visit our YouTube channel">
+                        <img src="images/youtube.svg" alt="YouTube channel" width="22" height="22">
+                    </a>
+
+                    <a href="https://x.com/TheGhostforex" aria-label="Visit our X profile">
+                        <img src="images/twitter-x.svg" alt="Twitter X" width="22" height="22">
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/ihoon-a-isaac" aria-label="Visit our LinkedIn profile">
+                        <img src="images/linkedin.svg" alt="LinkedIn" width="22" height="22">
+                    </a>
+
+                    <a href="https://www.github.com/isaacihoon-python" aria-label="Visit our GitHub profile">
+                        <img src="images/github.svg" alt="GitHub" width="22" height="22">
+                    </a>
+            </div>
+            <div class="project-info">
+                <p>WDD231 Class Project</p>
+                <p>Isaac Ihoon</p>
+                <p>&copy; <span id="currentyear">2026</span> Abuja Chamber of Commerce</p>
+                <p id="lastModified">Last Modification:</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script type="module" src="scripts/discover.js" defer></script>
+</body>
+</html>

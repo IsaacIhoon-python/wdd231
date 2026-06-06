@@ -4,6 +4,11 @@ document.getElementById("currentyear").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = `Last Modification: ${document.lastModified}`;
 
 // Modal functionality
+const timestampField = document.getElementById("timestamp");
+
+if (timestampField) {
+    timestampField.value = new Date().toISOString();
+}
 const infoLinks = document.querySelectorAll('.info-link');
 const modals = document.querySelectorAll('dialog');
 const closeButtons = document.querySelectorAll('.close-modal');
