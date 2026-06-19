@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse Restaurants | Abuja Meal Finder</title>
+  <meta name="description" content="Browse all restaurants in Abuja. Filter by Local, Fast Food, Intercontinental, Grill, or Cafe.">
+  <meta name="author" content="Ihoon Isaac">
+  
+  <link rel="icon" href="images/favicon.ico">
+  <meta property="og:title" content="Browse Abuja Restaurants">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/og-image.webp">
+  
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  
+  <script src="scripts/main.js" type="module"></script>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img src="images/logo.webp" alt="Abuja Meal Finder Logo" width="60" height="60">
+      <h1>Abuja Meal Finder</h1>
+      <button id="menu" aria-label="Toggle navigation"></button>
+    </div>
+    <nav>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="browse.html" class="active">Browse</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>All Abuja Restaurants</h2>
+    
+    <div class="controls">
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="Local">Local</button>
+        <button class="filter-btn" data-filter="Fast Food">Fast Food</button>
+        <button class="filter-btn" data-filter="Grill">Grill</button>
+        <button class="filter-btn" data-filter="Intercontinental">Intercontinental</button>
+        <button class="filter-btn" data-filter="Cafe">Cafe</button>
+      </div>
+      <div class="views">
+        <button id="grid" aria-label="Grid view">⊞</button>
+        <button id="list" aria-label="List view">☰</button>
+      </div>
+    </div>
+
+    <div id="restaurant-container" class="grid"></div>
+  </main>
+
+  <!-- Modal for restaurant details -->
+  <dialog id="restaurant-modal"></dialog>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Abuja Meal Finder | Ihoon Isaac | WDD 231</p>
+    <p><a href="attributions.html">Attributions</a> | <a href="https://www.loom.com/share/3f62096374bd4db18b574e003036cb48" target="_blank">Project Video</a></p>
+  </footer>
+</body>
+</html>

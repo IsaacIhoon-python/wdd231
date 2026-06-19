@@ -1,0 +1,220 @@
+:root {
+  --primary: #1a472a;
+  --accent: #f9a825;
+  --light: #f5f5f5;
+  --dark: #333;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  color: var(--dark);
+  margin: 0;
+}
+
+/* Header + Nav */
+header { background: var(--primary); color: white; }
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+#menu {
+  margin-left: auto;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+}
+#menu::before { content: "☰"; }
+#menu.open::before { content: "✕"; }
+.navigation {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navigation.open { display: block; }
+.navigation a {
+  display: block;
+  padding: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+.navigation a.active {
+  background: rgba(0,0,0,0.3);
+  font-weight: 700;
+  border-bottom: 3px solid var(--secondary-color);
+}
+
+.navigation a:hover, .navigation a.active { background: rgba(0,0,0,0.2); }
+
+/* Main */
+main { padding: 1rem; max-width: 1200px; margin: 0 auto; }
+.hero { text-align: center; padding: 2rem 1rem; background: var(--light); }
+.cta {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--dark);
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.filters { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.filter-btn, .views button {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--primary);
+  background: white;
+  cursor: pointer;
+}
+.filter-btn.active { background: var(--primary); color: white; }
+
+/* Cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+.list section {
+  display: grid;
+  grid-template-columns: 100px 2fr 1fr 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+}
+.list section:nth-child(even) { background: #eee; }
+.list img { width: 100px; height: 75px; object-fit: cover; }
+.card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  background: white;
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.details-btn {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* Form Styles */
+.suggest-form {
+  max-width: 600px;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.suggest-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+.suggest-form input,
+.suggest-form select,
+.suggest-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.suggest-form input:required,
+.suggest-form select:required {
+  border-left: 4px solid var(--accent);
+}
+.suggest-form button[type="submit"] {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 1rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.suggest-form button[type="submit"]:hover {
+  background: #0f3019;
+}
+.results-card {
+  background: var(--light);
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+
+/* Modal */
+dialog {
+  border: none;
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 500px;
+}
+dialog::backdrop { background: rgba(0,0,0,0.5); }
+#close-modal {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+/* Dark Mode */
+body.dark {
+  --background-color: #1a1a1a;
+  --text-color: #f5f5f5;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+body.dark .card {
+  background: #2a2a2a;
+  border-color: #444;
+}
+body.dark .list section:nth-child(even) { 
+  background: #252525; 
+}
+/* Footer */
+footer {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+}
+footer a { color: var(--accent); }
+
+.error { color: red; font-weight: bold; }
+
+.spotlights {
+  min-height: 600px; 
+}
+
+#spotlight-container:empty::before {
+  content: "Loading featured restaurants...";
+  display: block;
+  text-align: center;
+  padding: 4rem;
+  color: #666;
+}
+
+.card img, .spotlights img {
+  aspect-ratio: 4 / 3;
+  width: 100%;
+  height: auto;
+}

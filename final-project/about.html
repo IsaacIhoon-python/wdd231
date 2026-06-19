@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About & Suggest a Restaurant | Abuja Meal Finder</title>
+  <meta name="description" content="Learn about Abuja Meal Finder and suggest a new restaurant to be added to our directory of Abuja food spots.">
+  <meta name="author" content="Ihoon Isaac">
+  
+  <link rel="icon" href="images/favicon.ico">
+  <meta property="og:title" content="About Abuja Meal Finder">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/og-image.webp">
+  
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  
+  <script src="scripts/main.js" type="module"></script>
+  <script src="scripts/form.js" type="module"></script>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img src="images/logo.webp" alt="Abuja Meal Finder Logo" width="60" height="60">
+      <h1>Abuja Meal Finder</h1>
+      <button id="menu" aria-label="Toggle navigation"></button>
+    </div>
+    <nav>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="browse.html">Browse</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>About This Project</h2>
+    <section class="about-content">
+      <p>Abuja Meal Finder is a WDD 231 final project built to help locals and visitors discover the best food spots across Abuja, Nigeria. From roadside suya to upscale intercontinental dining, this directory showcases 20+ restaurants with real details on category, price, and location.</p>
+      <p>This site was built using semantic HTML5, modern CSS, and vanilla JavaScript ES Modules. No frameworks were used. All restaurant data is stored locally in JSON and fetched using the Fetch API.</p>
+    </section>
+
+    <h2>Suggest a Restaurant</h2>
+    <p>Know a great spot we missed? Fill out the form below and we’ll consider adding it.</p>
+    
+    <form method="get" action="form-action.html" class="suggest-form">
+      <label>
+        Restaurant Name*
+        <input type="text" id="name" name="name" required autocomplete="organization">
+      </label>
+
+      <label>
+        Your Email
+        <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email">
+      </label>
+
+      <label>
+        Category*
+        <select id="category" name="category" required>
+          <option value="" disabled selected>Select a category...</option>
+          <option value="Local">Local</option>
+          <option value="Fast Food">Fast Food</option>
+          <option value="Grill">Grill</option>
+          <option value="Intercontinental">Intercontinental</option>
+          <option value="Cafe">Cafe</option>
+        </select>
+      </label>
+
+      <label>
+        Location in Abuja*
+        <input type="text" id="location" name="location" required placeholder="e.g. Wuse 2" autocomplete="address-level2">
+      </label>
+
+      <label>
+        Price Range*
+        <select id="price" name="price" required>
+          <option value="" disabled selected>Select price...</option>
+          <option value="₦">₦ - Budget</option>
+          <option value="₦₦">₦₦ - Moderate</option>
+          <option value="₦₦₦">₦₦₦ - Upscale</option>
+        </select>
+      </label>
+
+      <label>
+        Why should we add it?
+        <textarea id="reason" name="reason" rows="4" placeholder="Tell us about the food, service, or vibe..."></textarea>
+      </label>
+
+      <input type="hidden" id="timestamp" name="timestamp">
+
+      <button type="submit">Submit Suggestion</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Abuja Meal Finder | Ihoon Isaac | WDD 231</p>
+    <p><a href="attributions.html">Attributions</a> | <a href="https://www.loom.com/share/3f62096374bd4db18b574e003036cb48" target="_blank">Project Video</a></p>
+  </footer>
+</body>
+</html>

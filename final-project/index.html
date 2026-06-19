@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abuja Meal Finder | Home</title>
+  <meta name="description" content="Discover the best restaurants, bukkas, and suya spots in Abuja, Nigeria. Filter by category, price, and location.">
+  <meta name="author" content="Ihoon Isaac">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico">
+  
+  <!-- Social Media Meta -->
+  <meta property="og:title" content="Abuja Meal Finder">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/og-image.webp">
+  <meta property="og:url" content="https://isaacihoon-python.github.io/wdd231/finalproject/">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  
+  <!-- JS Modules -->
+  <script src="scripts/main.js" type="module"></script>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img src="images/logo.webp" alt="Abuja Meal Finder Logo" width="60" height="60">
+      <h1>Abuja Meal Finder</h1>
+      <button id="menu" aria-label="Toggle navigation"></button>
+    </div>
+    <nav>
+      <ul class="navigation">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="browse.html">Browse</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Find Your Next Meal in Abuja</h2>
+      <p>From suya to shawarma, discover 20+ top spots across the city.</p>
+      <a href="browse.html" class="cta">Browse All Restaurants</a>
+    </section>
+
+    <section class="weather">
+      <h2>Abuja Today</h2>
+      <div id="weather-info">
+        <p>Loading weather...</p>
+      </div>
+    </section>
+
+    <section class="spotlights">
+      <h2>Featured Restaurants</h2>
+      <div id="spotlight-container" class="grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Abuja Meal Finder | Ihoon Isaac | WDD 231</p>
+    <p><a href="attributions.html">Attributions</a> | <a href="https://www.loom.com/share/3f62096374bd4db18b574e003036cb48" target="_blank">Project Video</a></p>
+  </footer>
+</body>
+</html>

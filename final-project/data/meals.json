@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "name": "Amala and Ewedu",
+    "category": "Swallow",
+    "price": "₦1500-₦2500",
+    "origin": "Yoruba",
+    "ingredients": ["Yam flour", "Jute leaves", "Locust beans"],
+    "image": "amala.webp",
+    "description": "Smooth yam flour swallow with slippery jute leaf soup.",
+    "spotlight": true
+  },
+  {
+    "id": 2,
+    "name": "Jollof Rice",
+    "category": "Rice",
+    "price": "₦2000-₦3500",
+    "origin": "West African",
+    "ingredients": ["Rice", "Tomato", "Pepper", "Onions"],
+    "image": "jollof.webp",
+    "description": "Nigeria's famous party rice. Smoky and rich.",
+    "spotlight": true
+  }
+]

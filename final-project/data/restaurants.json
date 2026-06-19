@@ -1,0 +1,222 @@
+[
+  {
+    "id": 1,
+    "name": "Chicken Republic",
+    "category": "Fast Food",
+    "priceRange": "₦3,000",
+    "location": "Wuse 2",
+    "image": "chicken-republic.webp",
+    "specialty": "Refuel Max Meal",
+    "description": "Popular Nigerian QSR chain known for affordable rice and chicken meals.",
+    "spotlight": true
+  },
+  {
+    "id": 2,
+    "name": "Today’s Bukka",
+    "category": "Local",
+    "priceRange": "₦1,500",
+    "location": "Garki",
+    "image": "todays-bukka.webp",
+    "specialty": "Amala and Gbegiri",
+    "description": "Classic bukka experience with authentic Yoruba dishes and quick service.",
+    "spotlight": true
+  },
+  {
+    "id": 3,
+    "name": "Downtown Takeaway",
+    "category": "Intercontinental",
+    "priceRange": "₦6,000",
+    "location": "Maitama",
+    "image": "downtown-takeaway.webp",
+    "specialty": "Gourmet Burgers",
+    "description": "Upscale takeaway spot with continental meals and pastries.",
+    "spotlight": false
+  },
+  {
+    "id": 4,
+    "name": "Tastia Restaurant",
+    "category": "Fast Food",
+    "priceRange": "₦5,500",
+    "location": "Wuse 2",
+    "image": "tastia.webp",
+    "specialty": "Tastia Special Rice",
+    "description": "Modern fast food with a wide Nigerian and continental menu.",
+    "spotlight": false
+  },
+  {
+    "id": 5,
+    "name": "Farm City",
+    "category": "Grill",
+    "priceRange": "₦2,000",
+    "location": "Wuse 2",
+    "image": "farm-city.webp",
+    "specialty": "Grilled Croaker Fish",
+    "description": "Lounge and grill serving fresh seafood and continental dishes.",
+    "spotlight": true
+  },
+  {
+    "id": 6,
+    "name": "Yahuza Suya Spot",
+    "category": "Grill",
+    "priceRange": "₦1,500",
+    "location": "Wuse 2",
+    "image": "yahuza-suya.webp",
+    "specialty": "Beef Suya",
+    "description": "Legendary Abuja suya joint. Opens evenings only.",
+    "spotlight": false
+  },
+  {
+    "id": 7,
+    "name": "Yellow Plate",
+    "category": "Local",
+    "priceRange": "₦3,500",
+    "location": "Jabi",
+    "image": "yellow-plate.webp",
+    "specialty": "Seafood Okra",
+    "description": "Cozy spot for Nigerian soups and bowls served in clay plates.",
+    "spotlight": false
+  },
+  {
+    "id": 8,
+    "name": "Bukkateria Fast Food Restaurant",
+    "category": "Intercontinental",
+    "priceRange": "₦1,600",
+    "location": "Area 11",
+    "image": "bukkateria.webp",
+    "specialty": "Ofada Rice & Sauce",
+    "description": "No-frills bukka with large portions and fast service.",
+    "spotlight": false
+  },
+  {
+    "id": 9,
+    "name": "Taj Bistro",
+    "category": "Intercontinental",
+    "priceRange": "₦10,000",
+    "location": "Wuse 2",
+    "image": "taj-bistro.webp",
+    "specialty": "Indian Curry",
+    "description": "Fine dining with Indian, Chinese, and continental options.",
+    "spotlight": false
+  },
+  {
+    "id": 10,
+    "name": "Amala Sky",
+    "category": "Local",
+    "priceRange": "₦2,000",
+    "location": "Wuse 2",
+    "image": "amala-sky.webp",
+    "specialty": "Amala & Ewedu",
+    "description": "Elevated local dining focused on amala and Yoruba soups.",
+    "spotlight": false
+  },
+  {
+    "id": 11,
+    "name": "BluCabana",
+    "category": "Intercontinental",
+    "priceRange": "₦11,000",
+    "location": "Maitama",
+    "image": "blucabana.webp",
+    "specialty": "Grilled Prawns",
+    "description": "Restaurant, pool, and lounge with international menu.",
+    "spotlight": true
+  },
+  {
+    "id": 12,
+    "name": "Pizza Hut",
+    "category": "Fast Food",
+    "priceRange": "₦3,000",
+    "location": "Jabi Lake Mall",
+    "image": "pizza-hut.webp",
+    "specialty": "Pepperoni Pizza",
+    "description": "Global pizza chain with Abuja branches.",
+    "spotlight": false
+  },
+  {
+    "id": 13,
+    "name": "Johnny Rockets",
+    "category": "Fast Food",
+    "priceRange": "₦7,000",
+    "location": "Jabi Lake Mall",
+    "image": "johnny-rockets.webp",
+    "specialty": "Classic Burger & Shake",
+    "description": "American diner-style burgers and fries.",
+    "spotlight": false
+  },
+  {
+    "id": 14,
+    "name": "Food Hive by Canaan",
+    "category": "Cafe",
+    "priceRange": "₦2,800",
+    "location": "Gwarinpa",
+    "image": "food-hive.webp",
+    "specialty": "Shawarma",
+    "description": "Trendy cafe and food court with small chops and grills.",
+    "spotlight": false
+  },
+  {
+    "id": 15,
+    "name": "Honeysuckle",
+    "category": "Intercontinental",
+    "priceRange": "₦9,000",
+    "location": "Wuse 2",
+    "image": "honeysuckle.webp",
+    "specialty": "Chinese Special Fried Rice",
+    "description": "Pan-Asian and continental restaurant with garden seating.",
+    "spotlight": false
+  },
+  {
+    "id": 16,
+    "name": "KFC",
+    "category": "Fast Food",
+    "priceRange": "₦3,000",
+    "location": "Multiple",
+    "image": "kfc.webp",
+    "specialty": "Zinger Burger",
+    "description": "Global fried chicken chain with several Abuja outlets.",
+    "spotlight": false
+  },
+  {
+    "id": 17,
+    "name": "Cantina",
+    "category": "Intercontinental",
+    "priceRange": "₦7,500",
+    "location": "Maitama",
+    "image": "cantina.webp",
+    "specialty": "Pasta & Steak",
+    "description": "Upscale dining with Mediterranean and continental menu.",
+    "spotlight": false
+  },
+  {
+    "id": 18,
+    "name": "Lynda's Cafe",
+    "category": "Cafe",
+    "priceRange": "₦1,500",
+    "location": "Wuse 2",
+    "image": "lyndas-cafe.webp",
+    "specialty": "Chicken Wrap",
+    "description": "Casual cafe for breakfast, pastries, and coffee.",
+    "spotlight": false
+  },
+  {
+    "id": 19,
+    "name": "Domino's Pizza",
+    "category": "Fast Food",
+    "priceRange": "₦3,700",
+    "location": "Multiple",
+    "image": "dominos.webp",
+    "specialty": "Extravaganzza Pizza",
+    "description": "Pizza delivery chain with Abuja locations.",
+    "spotlight": false
+  },
+  {
+    "id": 20,
+    "name": "Check Point Abuja",
+    "category": "Grill",
+    "priceRange": "₦4,500",
+    "location": "Kado",
+    "image": "checkpoint.webp",
+    "specialty": "Grilled Fish",
+    "description": "Popular open-air spot for grills and drinks.",
+    "spotlight": false
+  }
+]
